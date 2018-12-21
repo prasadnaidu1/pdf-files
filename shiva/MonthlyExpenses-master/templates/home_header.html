@@ -1,0 +1,38 @@
+<style>
+      .affix {
+      top:0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+  .navbar {
+      margin-bottom: 0px;
+  }
+
+  .affix ~ .container-fluid {
+     position: relative;
+     top: 30px;
+  }
+</style>
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="175">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!--<a class="navbar-brand" href="#">WebSiteName</a>-->
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/loginPage/">Home</a></li>
+        <li><a href="/expensesPage/">Show Expenses</a></li>
+        <li><a href="/expensesAddingPage/">Add Expenses</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+          <!--<li><a href="/logout/" id="logout">Logout</a></li>-->
+        <li><a href="/logout/" id="logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
