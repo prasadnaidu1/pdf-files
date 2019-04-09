@@ -1,0 +1,63 @@
+{% load staticfiles %}
+<html>
+<head>
+    <title>Feedback Page</title>
+    <link rel="stylesheet" href="{% static 'css/feedback.css' %}">
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+    <div>
+        <ul>
+            <li> <a href="/home/"> Home</a>  </li>
+            <li> <a href="/services/">Services</a></li>
+            <li> <a href="/contact/">Contact</a></li>
+            <li> <a href="#">Feedback</a></li>
+            <li> <a href="/gallery/">Gallery</a></li>
+        </ul>
+    </div>
+
+<pre style="color: white; font-size: 20px">
+        Developed By Narayana Sir & Django Students
+    </pre>
+    </header>
+<div class="container">
+    <div class="row">
+        <div class="offset-3 col-md-6">
+            <h1>Your Feedbacks are...</h1>
+            {% if fbdata %}
+                {% for i in fbdata %}
+                         {% if i.rating > 3 %}
+                    <b id="b1">Name:     {{ i.name }}</b> <br>
+                     <b class="cb1">Rating:   {{ i.rating }} </b> <br>
+                     <b class="cb1">Time:     {{ i.time }} </b>   <br>
+                    <b class="cb1">Feedback: {{ i.feedback }} </b> <br> <br>
+                    {% endif %}
+                {% endfor %}
+            {% else %}
+                <h1>No Feedbacks</h1>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="offset-3 col-md-6">
+            <form method="POST">
+             <h1>Please give your feedback</h1>
+            {% csrf_token %}
+            {{ fform }}<br>
+                <center>
+            <input type="submit" value="Submit" class="btn btn-success">
+            <input type="reset" value="Clear" class="btn btn-danger">
+             </center>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/girl1.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    height:100vh;
+}
+ul{
+    float: right;
+    list-style-type: none;
+}
+
+ul li{
+    display: inline-block;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid white;
+    color: white;
+
+}
+ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+h1{
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    color: white;
+}
+table{
+    position: absolute;
+    top: 23%;
+    left: 20%;
+    color: white;
+}
+th,td{
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+tr:nth-of-type(even){
+    color: aqua;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

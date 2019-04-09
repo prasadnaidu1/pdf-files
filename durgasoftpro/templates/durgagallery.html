@@ -1,0 +1,66 @@
+{% load staticfiles %}
+
+<html>
+<head>
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="{% static 'css/gallery.css' %}">
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body style="background-color:gray">
+
+
+    <header>
+    <div>
+        <ul>
+            <li> <a href="/home/"> Home</a>  </li>
+            <li> <a href="/services/">Services</a></li>
+            <li> <a href="/contact/">Contact</a></li>
+            <li> <a href="/feedback/">Feedback</a></li>
+            <li> <a href="#">Gallery</a></li>
+        </ul>
+    </div>
+<div class="container">
+    <h1>Our Gallery</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{% static 'images/pic1.jpg' %}" style="border: 2px solid black;">
+            
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'images/pic2.jpeg' %}" style="border: 2px solid black;">
+        </div>
+    </div>
+
+<div class="row">
+        <div class="col-md-6">
+            <img src="{% static 'images/pic3.jpg' %}" style="border: 2px solid black;">
+
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'images/pic4.jpg' %}" style="border: 2px solid black;">
+        </div>
+    </div>
+
+<div class="row">
+        <div class="col-md-6">
+            <img src="{% static 'images/pic5.jpg' %}" style="border: 2px solid black;">
+
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'images/pic6.jpg' %}" style="border: 2px solid black;">
+        </div>
+    </div>
+</div>
+        <pre style="color: white; font-size: 20px">
+        Developed By Narayana Sir & Django Students
+    </pre>
+</header>
+</body>
+</html>

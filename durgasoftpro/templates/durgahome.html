@@ -1,0 +1,185 @@
+{% load staticfiles %}
+<html>
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header>
+    <div>
+        <ul>
+            <li> <a href="#">Home</a></li>
+            <li> <a href="/services/">Services</a></li>
+            <li> <a href="/contact/">Contact</a></li>
+            <li> <a href="/feedback/">Feedback</a></li>
+            <li> <a href="/gallery/">Gallery</a></li>
+        </ul>
+    </div>
+    <div class="title">
+        <h1 style="font-size: 70px">Welcome to Durgasoft</h1>
+    </div>
+
+    <div id="btnsid">
+        <button data-toggle="modal" data-target="#online" id="btn1">
+            <h1>Online</h1>
+        <button data-toggle="modal" data-target="#offline" id="btn2">
+            <h1>Offline</h1>
+        </button>
+        </button>
+    </div>
+
+    <div class="modal" role="modal" id="online">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header bg-primary">
+                    <h1 class="modal-title">Online Batches</h1>
+                    <button type="button" class="close text-white" data-dismiss="modal">&times</button>
+
+                </div>
+
+                <div class="modal-body">
+                    <table border="2">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Fee</th>
+                                <th>Data</th>
+                                <th>Time</th>
+                                <th>Dur</th>
+                                <th>Faculty</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Python</td>
+                                <td>2000</td>
+                                <td>10th Mar</td>
+                                <td>10am</td>
+                                <td>60days</td>
+                                <td>Satya</td>
+                            </tr>
+                        <tr>
+                                <td>Django</td>
+                                <td>2000</td>
+                                <td>10th Mar</td>
+                                <td>11am</td>
+                                <td>60days</td>
+                                <td>Narayana</td>
+                            </tr>
+                        <tr>
+                                <td>Rest API</td>
+                                <td>2000</td>
+                                <td>10th Mar</td>
+                                <td>11am</td>
+                                <td>30days</td>
+                                <td>Srinivas</td>
+                            </tr>
+                        <tr>
+                                <td>UI</td>
+                                <td>1000</td>
+                                <td>10th Mar</td>
+                                <td>2pm</td>
+                                <td>60days</td>
+                                <td>Ramesh</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="modal-footer bg-info">
+                    <a href="/contact/" class="text-white">Get Enquiry</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+<div class="modal" role="modal" id="offline">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header bg-primary">
+                    <h1 class="modal-title">Offline Batches</h1>
+                                        <button type="button" class="close text-white" data-dismiss="modal">&times</button>
+                </div>
+
+                <div class="modal-body">
+                    <table border="2">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Fee</th>
+                                <th>Data</th>
+                                <th>Time</th>
+                                <th>Dur</th>
+                                <th>Faculty</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Python</td>
+                                <td>2000</td>
+                                <td>10th Mar</td>
+                                <td>10am</td>
+                                <td>60days</td>
+                                <td>Satya</td>
+                            </tr>
+                        <tr>
+                                <td>Django</td>
+                                <td>2000</td>
+                                <td>10th Mar</td>
+                                <td>11am</td>
+                                <td>60days</td>
+                                <td>Narayana</td>
+                            </tr>
+                        <tr>
+                                <td>Rest API</td>
+                                <td>2000</td>
+                                <td>10th Mar</td>
+                                <td>11am</td>
+                                <td>30days</td>
+                                <td>Srinivas</td>
+                            </tr>
+                        <tr>
+                                <td>UI</td>
+                                <td>1000</td>
+                                <td>10th Mar</td>
+                                <td>2pm</td>
+                                <td>60days</td>
+                                <td>Ramesh</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="modal-footer bg-info">
+                    <a href="/contact/" class="text-white">Get Enquiry</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <pre style="color: white; font-size: 20px">
+        Developed By Narayana Sir & Django Students
+    </pre>
+
+</header>
+</body>
+</html>
+
+
+
+
+
+
+
